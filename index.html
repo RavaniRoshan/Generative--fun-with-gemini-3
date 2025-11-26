@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini Neo-Brutalist</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Space Grotesk"', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            colors: {
+              'neo-black': '#000000',
+              'neo-white': '#ffffff',
+              'neo-yellow': '#FBFF00',
+              'neo-pink': '#FF00FF',
+              'neo-blue': '#2957FF',
+              'neo-purple': '#B026FF',
+              'neo-bg': '#f3f3f3',
+              'neo-green': '#00FF94',
+            },
+            boxShadow: {
+              'neo': '4px 4px 0px 0px #000000',
+              'neo-sm': '2px 2px 0px 0px #000000',
+              'neo-lg': '8px 8px 0px 0px #000000',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f3f3f3;
+        background-image: radial-gradient(#000000 1px, transparent 1px);
+        background-size: 24px 24px;
+        min-height: 100vh;
+      }
+      /* Custom scrollbar for that raw feel */
+      ::-webkit-scrollbar {
+        width: 12px;
+        background: #fff;
+        border-left: 2px solid #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #000;
+        border: 2px solid #fff;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

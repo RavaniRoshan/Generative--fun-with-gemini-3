@@ -1,0 +1,7 @@
+{
+  "name": "Gemini Neo-Brutalist Chat",
+  "description": "A high-energy, Gen Z styled chat interface powered by Gemini 2.5 Flash, featuring brutalist design elements, snappy animations, and streaming responses.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
